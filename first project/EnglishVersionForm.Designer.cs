@@ -1,6 +1,6 @@
 ﻿namespace first_project
 {
-    partial class StartGameForm
+    partial class EnglishVersionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.englishlanguagebutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // englishlanguagebutton
+            // button1
             // 
-            this.englishlanguagebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.englishlanguagebutton.Location = new System.Drawing.Point(806, 482);
-            this.englishlanguagebutton.Name = "englishlanguagebutton";
-            this.englishlanguagebutton.Size = new System.Drawing.Size(427, 143);
-            this.englishlanguagebutton.TabIndex = 0;
-            this.englishlanguagebutton.Text = "English";
-            this.englishlanguagebutton.UseVisualStyleBackColor = true;
-            this.englishlanguagebutton.Click += new System.EventHandler(this.englishlanguagebutton_Click);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(848, 677);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(437, 125);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Answer";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(776, 257);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(842, 520);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(466, 54);
+            this.label1.Size = new System.Drawing.Size(172, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Choose the language";
+            this.label1.Text = "Your answer";
             // 
-            // StartGameForm
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(848, 582);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(398, 22);
+            this.textBox1.TabIndex = 2;
+            // 
+            // EnglishVersionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1838, 893);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.englishlanguagebutton);
-            this.Name = "StartGameForm";
-            this.Text = "StartGameForm";
+            this.Controls.Add(this.button1);
+            this.Name = "EnglishVersionForm";
+            this.Text = "EnglishVersionForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -70,7 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button englishlanguagebutton;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

@@ -37,7 +37,6 @@ namespace first_project
         {
             StartGameForm newForm = new StartGameForm();
             newForm.Show();
-
         }
     }
 }

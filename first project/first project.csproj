@@ -52,6 +52,12 @@
     <Compile Include="AboutdevsForm.Designer.cs">
       <DependentUpon>AboutdevsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnglishVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnglishVersionForm.Designer.cs">
+      <DependentUpon>EnglishVersionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     </Compile>
     <EmbeddedResource Include="AboutdevsForm.resx">
       <DependentUpon>AboutdevsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnglishVersionForm.resx">
+      <DependentUpon>EnglishVersionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
