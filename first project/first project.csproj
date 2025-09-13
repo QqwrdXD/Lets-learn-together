@@ -72,6 +72,8 @@
     <Compile Include="StartGameForm.Designer.cs">
       <DependentUpon>StartGameForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VocabularyReader.cs" />
+    <Compile Include="WordPair.cs" />
     <EmbeddedResource Include="AboutdevsForm.resx">
       <DependentUpon>AboutdevsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,6 +111,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\собэк.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="5000_words.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

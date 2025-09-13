@@ -33,10 +33,12 @@ namespace first_project
             newForm.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void startgamebutton_Click(object sender, EventArgs e)
         {
             StartGameForm newForm = new StartGameForm();
             newForm.Show();
         }
+
     }
+
 }
