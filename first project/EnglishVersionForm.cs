@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace first_project
 {
-    public partial class StartGameForm: Form
+    public partial class EnglishVersionForm: Form
     {
-        public StartGameForm()
+        public EnglishVersionForm()
         {
             InitializeComponent();
         }
 
-        private void englishlanguagebutton_Click(object sender, EventArgs e)
+        private void englishanswerbutton_Click(object sender, EventArgs e)
         {
-            EnglishVersionForm newForm = new EnglishVersionForm();
-            newForm.Show();
+
         }
+        
     }
 }
