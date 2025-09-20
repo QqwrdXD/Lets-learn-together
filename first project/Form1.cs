@@ -19,7 +19,7 @@ namespace first_project
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
-            label1.Text = "Добро пожаловать в приложение \nдля осваивания иностранных языков \n             Lets learn together";
+            label1.Text = "Welcome to the foreign app \n    language learning app \n       Lets learn together";
         }
 
         private void showinfbutton_Click(object sender, EventArgs e)
