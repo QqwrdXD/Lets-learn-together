@@ -35,7 +35,7 @@ namespace first_project
 
         private void startgamebutton_Click(object sender, EventArgs e)
         {
-            StartGameForm newForm = new StartGameForm();
+            ChooseLanguageForm newForm = new ChooseLanguageForm();
             newForm.Show();
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,35 +20,47 @@ namespace first_project
         }
         private Random random = new Random();
         private string currentCorrectAnswer = "";
-
+        List<string> a2List = new List<string>();
         private void englishanswerbutton_Click(object sender, EventArgs e)
         {
             string englishanswer = txtEnglishAnswer.Text.Trim('"').Trim();
-                if (englishanswer == currentCorrectAnswer)
-                {
-                    lblEnglishResult.Text = "Correct";
-                    lblEnglishResult.ForeColor = Color.Green;
-                }
-                else
-                {
-                    lblEnglishResult.Text = $"Incorrect. Correct is:{currentCorrectAnswer}";
-                    lblEnglishResult.ForeColor = Color.Red;
-                }
+            if (englishanswer == currentCorrectAnswer)
+            {
+                lblEnglishResult.Text = "Correct";
+                lblEnglishResult.ForeColor = Color.Green;
+            }
+            else
+            {
+                lblEnglishResult.Text = $"Incorrect. Correct is:{currentCorrectAnswer}";
+                lblEnglishResult.ForeColor = Color.Red;
+            }
         }
 
         private void beginnbutton_Click(object sender, EventArgs e)
         {
-            string filePath = @"C:\Users\Ваня\Desktop\for Lets learn together.txt";
+            string filePath = "for Lets learn together.txt";
             try
             {
                 string[] allLines = File.ReadAllLines(filePath);
-                int randomIndex = random.Next(allLines.Length);
-                string randomLine = allLines[randomIndex];
-                string[] parts = randomLine.Split(';');
-                if (parts.Length >= 2)
+                foreach (string fileline in allLines)
                 {
-                    lblEnglishWord.Text = parts[0].Trim('"').Trim();
-                    currentCorrectAnswer = parts[1].Trim('"').Trim();
+                    string[] parts = fileline.Split(';');
+                    if (parts.Length >= 3)
+                    {
+                        string lvl = parts[2].Trim('"').Trim();
+                        if (lvl == "1")
+                        {
+                            a2List.Add(fileline);
+                        }
+                    }
+                }
+                int randomIndex = random.Next(a2List.Count);
+                string randomLine = a2List[randomIndex];
+                string[] selectedParts = randomLine.Split(';');
+                if (selectedParts.Length >= 3)
+                {
+                    lblEnglishWord.Text = selectedParts[0].Trim('"').Trim();
+                    currentCorrectAnswer = selectedParts[1].Trim('"').Trim();
                     txtEnglishAnswer.Text = "";
                     lblEnglishResult.Text = "";
                 }

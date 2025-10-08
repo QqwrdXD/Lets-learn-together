@@ -19,8 +19,9 @@ namespace first_project
 
         private void englishlanguagebutton_Click(object sender, EventArgs e)
         {
-            EnglishVersionForm newForm = new EnglishVersionForm();
+            LevelGameForm newForm = new LevelGameForm();
             newForm.Show();
+
         }
     }
 }

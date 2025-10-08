@@ -52,17 +52,47 @@
     <Compile Include="AboutdevsForm.Designer.cs">
       <DependentUpon>AboutdevsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChooseLanguageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLanguageForm.Designer.cs">
+      <DependentUpon>ChooseLanguageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLevelForm.Designer.cs">
+      <DependentUpon>ChooseLevelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EnglishVersionForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EnglishVersionForm.Designer.cs">
       <DependentUpon>EnglishVersionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnglishVersionFormB1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnglishVersionFormB1.Designer.cs">
+      <DependentUpon>EnglishVersionFormB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishVersionFormB2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnglishVersionFormB2.Designer.cs">
+      <DependentUpon>EnglishVersionFormB2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevelGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevelGameForm.Designer.cs">
+      <DependentUpon>LevelGameForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,11 +105,26 @@
     <EmbeddedResource Include="AboutdevsForm.resx">
       <DependentUpon>AboutdevsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChooseLanguageForm.resx">
+      <DependentUpon>ChooseLanguageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseLevelForm.resx">
+      <DependentUpon>ChooseLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EnglishVersionForm.resx">
       <DependentUpon>EnglishVersionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EnglishVersionFormB1.resx">
+      <DependentUpon>EnglishVersionFormB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnglishVersionFormB2.resx">
+      <DependentUpon>EnglishVersionFormB2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevelGameForm.resx">
+      <DependentUpon>LevelGameForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
